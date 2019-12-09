@@ -8,7 +8,7 @@ docker run --rm freelyit/apache-bench
 
 
 ## HTTP GET request
-To send an HTTP GET request you can use:
+Below a sample of an HTTP GEt Request that will do 100 requests (-n 100) to https://www.docker.com/ and do it with 10 concurrent threads (-c 10)
 
 ```
 docker run --rm freelyit/apache-bench -n 100 -c 10 https://www.docker.com/

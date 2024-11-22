@@ -1,8 +1,8 @@
-FROM alpine
+FROM alpine:latest
 
-MAINTAINER Jean-Pierre Broeders <github@freelyit.nl>
+LABEL org.opencontainers.image.authors="github@freelyit.nl"
 
-ENV TERM linux
+ENV TERM=linux
 RUN apk --no-cache add apache2-utils
 
 ENTRYPOINT ["/usr/bin/ab"]
